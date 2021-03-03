@@ -146,6 +146,23 @@ class SiteController extends Controller
     }
 
     /**
+     * @return string
+     */
+    public function actionHello()
+    {
+        return $this->render('hello');
+        //return 'Hello World';
+    }
+
+    /**
+     * @return string
+     */
+    public function actionHello2()
+    {
+        return 'Hello World2';
+    }
+
+    /**
      * Signs user up.
      *
      * @return mixed
@@ -257,4 +274,5 @@ class SiteController extends Controller
             'model' => $model
         ]);
     }
+
 }
